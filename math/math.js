@@ -230,51 +230,32 @@ const arr = [
         }
     }
 ]
-// Task 1: Şirkət adlarını sadalayın
-// arr massivindəki bütün istifadəçilərin işlədiyi şirkətlərin adlarının massivini 
-// qaytaran funksiya yazın.
-// 
-// Task2: E-poçt filterleyin
-// İstifadəçilərin e-poçt ünvanlarını ".biz" uzantısı ilə filterden keçirən və
-//  bu e-poçt ünvanlarını massiv kimi qaytaran funksiya yazın.
-// 
-// Task 3: Şəhərlərdəki İstifadəçilərin sayı
-// Hər şəhərdə neçə istifadəçi olduğunu qaytaran funksiya yazın.
-// 
-// Task 4: Şirkət şüarlarının ümumi uzunluğu
-// Bütün istifadəçilərin şirkətlərinin (catchPhrase-in) ümumi
-// uzunluğunu qaytaran funksiya yazın.
+// ! Task 1 burda phone nomreleri olduğu kimi qalacaq herbiri necedirse ele lakin o rəqəmlərin herbiri random olacaq məsələn
+// Phone:987654321 dirse
+// Bu reqem herbirj random reqemlerle evez olunacaq
+// Meselen :610373930Daha sonra o reqemler icinde min maxdan istifade edib en boyuk ve en kiçik reqemi tapacaqsiz 
 
-// ------------------------------------------------------------------
-
-// TASK 1
-// let newArr = []
-// let company = arr.map((item) => newArr.push(item.company.name))
-// console.log(newArr);
-// let obj = "9";
-// let companyFind = arr.filter(item => item.id == obj);
-
-// if (companyFind.length > 0) {
-//     console.log(newArr.push(companyFind[0].company.name));
-// } else {
-//     console.log("Username sehvdir");
+// const phoneChange = () =>{
+//     let randomNum = Math.floor(Math.random() * arr.length)
+//     return arr[randomNum].phone.slice()
 // }
-
-// TASK 2
-// console.log("TASK 2 BUDUR");
-// let newArray = []
-// let emails = arr.filter((item) => item.email.slice(-3) == "biz")
-// console.log(emails);
-
-// TASK3
-// console.log("TASK 3 BUDUR");
-
-// TASK 4
-// console.log("TASK 4 BUDUR");
-// const idArr = "Kamren";
-// const idNumber = 5;
-
-// let catchs = arr.filter((item) => item.username == idArr && item.id == idNumber);
-// let catchsLength = catchs.map(item => item.company.catchPhrase.length);
-
-// console.log(catchsLength);
+// console.log(phoneChange());
+//! Task 2
+//Adresleri random cixaran Array qaytaran bir function qurun
+// let arrnew = []
+// const adres = () => {
+//     let randomm = Math.floor(Math.random() * arr.length)
+//     return arr[randomm].address;
+// }
+// arrnew.push(adres())
+// console.log(arrnew);
+//! Task 3
+// Email ları random cixaran Array şəklində qaytaran bir function qurun
+// Qeyd: taski next derse qeder bitirin ve kimin basa dusmediyi sual olsa qrupda buyursun sorussun, uğurlar.
+// let arrnew2 = []
+// const emails = () => {
+//     let randomEmails = Math.floor(Math.random() * arr.length)
+//     return arr[randomEmails].email
+// }
+// arrnew2.push(emails())
+// console.log(arrnew2);
